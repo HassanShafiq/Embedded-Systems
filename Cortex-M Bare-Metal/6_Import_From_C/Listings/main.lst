@@ -1,0 +1,89 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             DATA, ALIGN=2
+    2 00000000                 IMPORT           number
+    3 00000000                 IMPORT           Adder
+    4 00000000                 AREA             |.text|,CODE,READONLY,ALIGN=2
+    5 00000000                 THUMB
+    6 00000000                 EXPORT           Main
+    7 00000000         Main
+    8 00000000 4902            LDR              R1, =number
+    9 00000002 F04F 0064       MOV              R0, #100
+   10 00000006 6008            STR              R0, [R1]
+   11 00000008 F7FF FFFE       BL               Adder
+   12 0000000C                 ALIGN
+   13 0000000C                 END
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\main.d -o.\objects\main.o -I.\RTE\_TM4C123 -I"C:\User
+s\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include" -I"
+C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Inclu
+de\TM4C123" --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 528
+" --predefine="_RTE_ SETA 1" --predefine="TM4C123GH6PM SETA 1" --list=.\listing
+s\main.lst main.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DATA 00000000
+
+Symbol: DATA
+   Definitions
+      At line 1 in file main.s
+   Uses
+      None
+Comment: DATA unused
+1 symbol
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 4 in file main.s
+   Uses
+      None
+Comment: .text unused
+Main 00000000
+
+Symbol: Main
+   Definitions
+      At line 7 in file main.s
+   Uses
+      At line 6 in file main.s
+Comment: Main used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+Adder 00000000
+
+Symbol: Adder
+   Definitions
+      At line 3 in file main.s
+   Uses
+      At line 11 in file main.s
+Comment: Adder used once
+number 00000000
+
+Symbol: number
+   Definitions
+      At line 2 in file main.s
+   Uses
+      At line 8 in file main.s
+Comment: number used once
+2 symbols
+342 symbols in table

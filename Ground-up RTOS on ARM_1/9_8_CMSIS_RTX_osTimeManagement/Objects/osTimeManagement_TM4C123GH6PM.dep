@@ -1,0 +1,34 @@
+Dependencies for Project 'osTimeManagement', Target 'TM4C123GH6PM': (DO NOT MODIFY !)
+F (.\main.c)(0x5F05AE29)(--c99 --gnu -c --cpu Cortex-M4.fp -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_TM4C123GH6PM-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC"-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="528" -D_RTE_ -DTM4C123GH6PM-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (led.h)(0x5F05A8E4)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x5C8A4EAC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5ECE55CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEC4CD2)
+F (.\led.c)(0x5F05AD9E)(--c99 --gnu -c --cpu Cortex-M4.fp -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_TM4C123GH6PM-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC"-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="528" -D_RTE_ -DTM4C123GH6PM-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530F7186)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x551060BC)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8EFB52)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5ECE55CA)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8EFB52)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8330F2)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8EFB52)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8EFB52)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B76296)
+F (.\led.h)(0x5F05A8E4)()
+F (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM4.lib)(0x5E8EFB5A)()
+F (RTE\CMSIS\RTX_Conf_CM.c)(0x5C8A4EAC)(--c99 --gnu -c --cpu Cortex-M4.fp -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_TM4C123GH6PM-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC"-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="528" -D_RTE_ -DTM4C123GH6PM-o .\objects\rtx_conf_cm.o --omf_browse .\objects\rtx_conf_cm.crf --depend .\objects\rtx_conf_cm.d)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x5C8A4EAC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5ECE55CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEC4CD2)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC\RTX_CM_lib.h)(0x5E8330FC)
+F (RTE\Device\TM4C123GH6PM\startup_TM4C123.s)(0x51B76296)(--cpu Cortex-M4.fp --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_TM4C123GH6PM-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC"-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"--pd "__UVISION_VERSION SETA 528" --pd "_RTE_ SETA 1" --pd "TM4C123GH6PM SETA 1"--list .\listings\startup_tm4c123.lst --xref -o .\objects\startup_tm4c123.o --depend .\objects\startup_tm4c123.d)
+F (RTE\Device\TM4C123GH6PM\system_TM4C123.c)(0x5F05ADC7)(--c99 --gnu -c --cpu Cortex-M4.fp -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_TM4C123GH6PM-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\INC"-I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123"-D__UVISION_VERSION="528" -D_RTE_ -DTM4C123GH6PM-o .\objects\system_tm4c123.o --omf_browse .\objects\system_tm4c123.crf --depend .\objects\system_tm4c123.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5ECE55CA)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530F7186)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x551060BC)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8EFB52)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8EFB52)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E8330F2)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8EFB52)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8EFB52)
+I (C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B76296)

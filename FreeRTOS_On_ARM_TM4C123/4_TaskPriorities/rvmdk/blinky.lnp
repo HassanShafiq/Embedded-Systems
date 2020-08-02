@@ -1,0 +1,16 @@
+--cpu=Cortex-M4.fp
+".\rvmdk\blinky.o"
+"..\..\..\..\driverlib\rvmdk\driverlib.lib"
+".\rvmdk\startup_tm4c123.o"
+".\rvmdk\system_tm4c123.o"
+".\rvmdk\freertos_evr.o"
+".\rvmdk\list.o"
+".\rvmdk\heap_4.o"
+".\rvmdk\port.o"
+".\rvmdk\queue.o"
+".\rvmdk\tasks.o"
+".\rvmdk\timers.o"
+--library_type=microlib --strict --scatter "blinky.sct"
+--entry Reset_Handler --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\rvmdk\blinky.map" -o .\rvmdk\blinky.axf

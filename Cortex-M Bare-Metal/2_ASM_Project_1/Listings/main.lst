@@ -1,0 +1,205 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;#define GPIO_PORTF_DATA_R       (*((volatile unsigned l
+                       ong *)0x400253FC))
+    2 00000000         ;#define GPIO_PORTF_DIR_R        (*((volatile unsigned l
+                       ong *)0x40025400))
+    3 00000000         ;#define GPIO_PORTF_AFSEL_R      (*((volatile unsigned l
+                       ong *)0x40025420))
+    4 00000000         ;#define GPIO_PORTF_PUR_R        (*((volatile unsigned l
+                       ong *)0x40025510))
+    5 00000000         ;#define GPIO_PORTF_DEN_R        (*((volatile unsigned l
+                       ong *)0x4002551C))
+    6 00000000         ;#define GPIO_PORTF_LOCK_R       (*((volatile unsigned l
+                       ong *)0x40025520))
+    7 00000000         ;#define GPIO_PORTF_CR_R         (*((volatile unsigned l
+                       ong *)0x40025524))
+    8 00000000         ;#define GPIO_PORTF_AMSEL_R      (*((volatile unsigned l
+                       ong *)0x40025528))
+    9 00000000         ;#define GPIO_PORTF_PCTL_R       (*((volatile unsigned l
+                       ong *)0x4002552C))
+   10 00000000         ;#define GPIO_PORTF_DR2R_R       (*((volatile unsigned l
+                       ong *)0x40025500))
+   11 00000000         ;#define GPIO_PORTF_DR4R_R       (*((volatile unsigned l
+                       ong *)0x40025504))
+   12 00000000         ;#define GPIO_PORTF_DR8R_R       (*((volatile unsigned l
+                       ong *)0x40025508))
+   13 00000000         ;#define GPIO_LOCK_KEY           0x4C4F434B  // Unlocks 
+                       the GPIO_CR register
+   14 00000000         ;#define SYSCTL_RCGC2_R          (*((volatile unsigned l
+                       ong *)0x400FE108))
+   15 00000000         
+   16 00000000         
+   17 00000000         
+   18 00000000 400FE608 
+                       SYSCTL_RCGCGPIO_R
+                               EQU              0X400FE608
+   19 00000000 40025400 
+                       GPIO_PORTF_DIR_R
+                               EQU              0X40025400
+   20 00000000 4002551C 
+                       GPIO_PORTF_DEN_R
+                               EQU              0X4002551C
+   21 00000000 400253FC 
+                       GPIO_PORTF_DATA_R
+                               EQU              0X400253FC
+   22 00000000         
+   23 00000000         
+   24 00000000                 AREA             |.text|,CODE,READONLY,ALIGN=2
+   25 00000000                 THUMB
+   26 00000000                 EXPORT           MAIN
+   27 00000000         
+   28 00000000         MAIN
+   29 00000000 F000 F803       BL               GPIOF_Init
+   30 00000004         
+   31 00000004         LOOP
+   32 00000004 F000 F80F       BL               LIGHT_ON
+   33 00000008 E7FC            B                LOOP
+   34 0000000A         
+   35 0000000A         GPIOF_Init                           ; ACTIVATING THE GP
+                                                            IOF CLOCK THROUGH R
+                                                            CGCGPIO REGISTER IN
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+                                                            STEAD OF LEGACY RCG
+                                                            C2 REGISTER
+   36 0000000A 4909            LDR              R1, =SYSCTL_RCGCGPIO_R ; R1 POI
+                                                            NTING TO THE SYSTEM
+                                                             CONTROL REGISTER R
+                                                            CGC
+   37 0000000C 6808            LDR              R0, [R1]    ; INDEXED ADDRESSIN
+                                                            G TO LOAD THE RESET
+                                                             VALUE OF RCGCGPIO 
+                                                            INTO R0
+   38 0000000E F040 0020       ORR              R0, R0, #0x20
+   39 00000012 6008            STR              R0, [R1]
+   40 00000014         
+   41 00000014 4907            LDR              R1,=GPIO_PORTF_DIR_R ; CONFIGUR
+                                                            ING PORTF DIRECTION
+                                                             REGISTER
+   42 00000016 F04F 0002       MOV              R0, #0x02
+   43 0000001A 6008            STR              R0, [R1]
+   44 0000001C         
+   45 0000001C 4906            LDR              R1, =GPIO_PORTF_DEN_R ; CONFIGU
+                                                            RING DIRECTION REGI
+                                                            STER
+   46 0000001E F04F 0002       MOV              R0, #0x02
+   47 00000022 6008            STR              R0, [R1]
+   48 00000024         
+   49 00000024         ; SUBROUTINE COMPLETES
+   50 00000024 4770            BX               LR
+   51 00000026         
+   52 00000026         LIGHT_ON
+   53 00000026 4905            LDR              R1, =GPIO_PORTF_DATA_R
+   54 00000028 F04F 0002       MOV              R0, #0x02
+   55 0000002C 6008            STR              R0, [R1]
+   56 0000002E 4770            BX               LR
+   57 00000030         
+   58 00000030                 ALIGN
+   59 00000030                 END
+              400FE608 
+              40025400 
+              4002551C 
+              400253FC 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\main.d -o.\objects\main.o -I.\RTE\_TM4C123 -I"C:\User
+s\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include" -I"
+C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Inclu
+de\TM4C123" --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 528
+" --predefine="_RTE_ SETA 1" --predefine="TM4C123GH6PM SETA 1" --list=.\listing
+s\main.lst main.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 24 in file main.s
+   Uses
+      None
+Comment: .text unused
+GPIOF_Init 0000000A
+
+Symbol: GPIOF_Init
+   Definitions
+      At line 35 in file main.s
+   Uses
+      At line 29 in file main.s
+Comment: GPIOF_Init used once
+LIGHT_ON 00000026
+
+Symbol: LIGHT_ON
+   Definitions
+      At line 52 in file main.s
+   Uses
+      At line 32 in file main.s
+Comment: LIGHT_ON used once
+LOOP 00000004
+
+Symbol: LOOP
+   Definitions
+      At line 31 in file main.s
+   Uses
+      At line 33 in file main.s
+Comment: LOOP used once
+MAIN 00000000
+
+Symbol: MAIN
+   Definitions
+      At line 28 in file main.s
+   Uses
+      At line 26 in file main.s
+Comment: MAIN used once
+5 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+GPIO_PORTF_DATA_R 400253FC
+
+Symbol: GPIO_PORTF_DATA_R
+   Definitions
+      At line 21 in file main.s
+   Uses
+      At line 53 in file main.s
+Comment: GPIO_PORTF_DATA_R used once
+GPIO_PORTF_DEN_R 4002551C
+
+Symbol: GPIO_PORTF_DEN_R
+   Definitions
+      At line 20 in file main.s
+   Uses
+      At line 45 in file main.s
+Comment: GPIO_PORTF_DEN_R used once
+GPIO_PORTF_DIR_R 40025400
+
+Symbol: GPIO_PORTF_DIR_R
+   Definitions
+      At line 19 in file main.s
+   Uses
+      At line 41 in file main.s
+Comment: GPIO_PORTF_DIR_R used once
+SYSCTL_RCGCGPIO_R 400FE608
+
+Symbol: SYSCTL_RCGCGPIO_R
+   Definitions
+      At line 18 in file main.s
+   Uses
+      At line 36 in file main.s
+Comment: SYSCTL_RCGCGPIO_R used once
+4 symbols
+346 symbols in table

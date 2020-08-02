@@ -1,0 +1,102 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             |.text|,CODE,READONLY,ALIGN=2
+    2 00000000                 THUMB
+    3 00000000                 EXTERN           currentPt
+    4 00000000                 EXPORT           PendSV_Handler
+    5 00000000                 EXPORT           osSchedularLaunch
+    6 00000000         
+    7 00000000         PendSV_Handler                       ;save r0,r1,r2,r3,r
+                                                            12,lr,pc,psr  
+    8 00000000 B672            CPSID            I
+    9 00000002 E92D 0FF0       PUSH             {R4-R11}
+   10 00000006 480D            LDR              R0,=currentPt
+   11 00000008 6801            LDR              R1,[R0]
+   12 0000000A         
+   13 0000000A F8C1 D000       STR              SP,[R1]
+   14 0000000E 6849            LDR              R1,[R1,#4]
+   15 00000010 6001            STR              R1,[R0]
+   16 00000012         
+   17 00000012 F8D1 D000       LDR              SP,[R1]
+   18 00000016         
+   19 00000016 E8BD 0FF0       POP              {R4-R11}
+   20 0000001A B662            CPSIE            I
+   21 0000001C 4770            BX               LR
+   22 0000001E         
+   23 0000001E         
+   24 0000001E         osSchedularLaunch
+   25 0000001E 4807            LDR              R0,=currentPt
+   26 00000020 6802            LDR              R2,[R0]
+   27 00000022         
+   28 00000022 F8D2 D000       LDR              SP,[R2]
+   29 00000026         
+   30 00000026 E8BD 0FF0       POP              {R4-R11}
+   31 0000002A BC0F            POP              {R0-R3}
+   32 0000002C F85D CB04       POP              {R12}
+   33 00000030 B001            ADD              SP,SP,#4
+   34 00000032 F85D EB04       POP              {LR}
+   35 00000036 B001            ADD              SP,SP,#4
+   36 00000038 B662            CPSIE            I
+   37 0000003A 4770            BX               LR
+   38 0000003C                 ALIGN
+   39 0000003C                 END
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\oskernel_1.d -o.\objects\oskernel_1.o -I.\RTE\_TM4C12
+3GH6PM -I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\
+Core\Include" -I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1
+.1.0\Device\Include\TM4C123" --predefine="__EVAL SETA 1" --predefine="__UVISION
+_VERSION SETA 528" --predefine="_RTE_ SETA 1" --predefine="TM4C123GH6PM SETA 1"
+ --list=.\listings\oskernel.lst osKernel.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 1 in file osKernel.s
+   Uses
+      None
+Comment: .text unused
+PendSV_Handler 00000000
+
+Symbol: PendSV_Handler
+   Definitions
+      At line 7 in file osKernel.s
+   Uses
+      At line 4 in file osKernel.s
+Comment: PendSV_Handler used once
+osSchedularLaunch 0000001E
+
+Symbol: osSchedularLaunch
+   Definitions
+      At line 24 in file osKernel.s
+   Uses
+      At line 5 in file osKernel.s
+Comment: osSchedularLaunch used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+currentPt 00000000
+
+Symbol: currentPt
+   Definitions
+      At line 3 in file osKernel.s
+   Uses
+      At line 10 in file osKernel.s
+      At line 25 in file osKernel.s
+
+1 symbol
+341 symbols in table

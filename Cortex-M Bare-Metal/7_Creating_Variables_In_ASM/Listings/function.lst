@@ -1,0 +1,77 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             DATA,ALIGN=2
+    2 00000000 00 00 00 
+              00       amount  SPACE            4
+    3 00000004                 EXPORT           amount
+    4 00000004         ;------------------------------------------------
+    5 00000004                 AREA             |.text|,CODE,READONLY,ALIGN=2
+    6 00000000                 THUMB
+    7 00000000                 EXPORT           Amount_Func
+    8 00000000         Amount_Func
+    9 00000000 4902            LDR              R1, =amount
+   10 00000002 F04F 0059       MOV              R0, #89
+   11 00000006 6008            STR              R0, [R1]
+   12 00000008 4770            BX               LR
+   13 0000000A 00 00           ALIGN
+   14 0000000C                 END
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\function.d -o.\objects\function.o -I.\RTE\_TM4C123GH6
+PM -I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core
+\Include" -I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0
+\Device\Include\TM4C123" --predefine="__EVAL SETA 1" --predefine="__UVISION_VER
+SION SETA 528" --predefine="_RTE_ SETA 1" --predefine="TM4C123GH6PM SETA 1" --l
+ist=.\listings\function.lst function.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DATA 00000000
+
+Symbol: DATA
+   Definitions
+      At line 1 in file function.s
+   Uses
+      None
+Comment: DATA unused
+amount 00000000
+
+Symbol: amount
+   Definitions
+      At line 2 in file function.s
+   Uses
+      At line 3 in file function.s
+      At line 9 in file function.s
+
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 5 in file function.s
+   Uses
+      None
+Comment: .text unused
+Amount_Func 00000000
+
+Symbol: Amount_Func
+   Definitions
+      At line 8 in file function.s
+   Uses
+      At line 7 in file function.s
+Comment: Amount_Func used once
+2 symbols
+341 symbols in table

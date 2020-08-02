@@ -1,0 +1,134 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             |.text|, CODE, READONLY, ALIGN=
+2
+    2 00000000                 THUMB
+    3 00000000                 EXTERN           currentPt   ;importing currentP
+                                                            t pointer from osKe
+                                                            rnel.c
+    4 00000000                 EXPORT           SysTick_Handler
+    5 00000000                 EXPORT           osSchedulerLaunch
+    6 00000000         
+    7 00000000         
+    8 00000000         
+    9 00000000         
+   10 00000000         ; This implementation of SysTick_Handler will perform th
+                       e pre-emptive thread switch:
+   11 00000000         ; SysTick is periodic interrupt and the period is equal 
+                       to Quanta size, the argument that we passed to osKernelL
+                       aunch().
+   12 00000000         
+   13 00000000         ; Implementing Context save:
+   14 00000000         SysTick_Handler                      ; by-implementation
+                                                             saves R0, R1, R2, 
+                                                            R3, R12, LR, PC, PS
+                                                            R
+   15 00000000 B672            CPSID            I
+   16 00000002 E92D 0FF0       PUSH             {R4-R11}    ; by-force saves R4
+                                                            -R11
+   17 00000006         
+   18 00000006         ;The currentPt points to the Thread Control Block (TCB) 
+                       of the currently running thread and has just exhuasted i
+                       t's quanta 
+   19 00000006         ;and is in the process of being suspended for new thread
+                        to be loaded.
+   20 00000006 480D            LDR              R0, =currentPt ; R0 points to c
+                                                            urrentPt
+   21 00000008 6801            LDR              R1, [R0]    ; R1 = currentPt
+   22 0000000A F8C1 D000       STR              SP, [R1]
+   23 0000000E         ; Context saving completes here.  
+   24 0000000E         
+   25 0000000E         ; Updating the Stack pointer to point to the top of stac
+                       k of the new thread
+   26 0000000E 6849            LDR              R1, [R1, #4] ; R1 = currentPt->
+                                                            next 
+   27 00000010 6001            STR              R1, [R0]    ; currentPt = R1
+   28 00000012 F8D1 D000       LDR              SP, [R1]    ; SP = currentPt->s
+                                                            tackPt
+   29 00000016         
+   30 00000016 E8BD 0FF0       POP              {R4-R11}
+   31 0000001A B662            CPSIE            I
+   32 0000001C 4770            BX               LR
+   33 0000001E         
+   34 0000001E         osSchedulerLaunch
+   35 0000001E 4807            LDR              R0, =currentPt
+   36 00000020 6802            LDR              R2, [R0]    ; R2 = currentPt
+   37 00000022 F8D2 D000       LDR              SP, [R2]    ; SP = currentPt->s
+                                                            tackPt
+   38 00000026 E8BD 0FF0       POP              {R4-R11}
+   39 0000002A BC0F            POP              {R0-R3}
+   40 0000002C F85D CB04       POP              {R12}
+   41 00000030 B001            ADD              SP, SP, #4
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+   42 00000032 F85D EB04       POP              {LR}
+   43 00000036 B001            ADD              SP, SP, #4
+   44 00000038 B662            CPSIE            I
+   45 0000003A 4770            BX               LR
+   46 0000003C         
+   47 0000003C                 ALIGN
+   48 0000003C                 END
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\oskernel_1.d -o.\objects\oskernel_1.o -I.\RTE\_TM4C12
+3Gh6PM -I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\
+Core\Include" -I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1
+.1.0\Device\Include\TM4C123" --predefine="__EVAL SETA 1" --predefine="__UVISION
+_VERSION SETA 528" --predefine="_RTE_ SETA 1" --predefine="TM4C123GH6PM SETA 1"
+ --list=.\listings\oskernel.lst osKernel.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 1 in file osKernel.s
+   Uses
+      None
+Comment: .text unused
+SysTick_Handler 00000000
+
+Symbol: SysTick_Handler
+   Definitions
+      At line 14 in file osKernel.s
+   Uses
+      At line 4 in file osKernel.s
+Comment: SysTick_Handler used once
+osSchedulerLaunch 0000001E
+
+Symbol: osSchedulerLaunch
+   Definitions
+      At line 34 in file osKernel.s
+   Uses
+      At line 5 in file osKernel.s
+Comment: osSchedulerLaunch used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+currentPt 00000000
+
+Symbol: currentPt
+   Definitions
+      At line 3 in file osKernel.s
+   Uses
+      At line 20 in file osKernel.s
+      At line 35 in file osKernel.s
+
+1 symbol
+341 symbols in table

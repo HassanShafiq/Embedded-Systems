@@ -1,0 +1,53 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             |.text|,CODE,ALIGN=2
+    2 00000000                 THUMB
+    3 00000000                 EXPORT           Number
+    4 00000000         
+    5 00000000         Number
+    6 00000000 F240 0001 
+              F2C2 0000        MOV32            R0, #0x20000001
+    7 00000008 6000            STR              R0, [R0]    ; RETURN VALUE OF A
+                                                             FUNCTION IS STORED
+                                                             IN REGISTER R0 IN 
+                                                            ASSEMBLY, AUTOMATIC
+                                                            ALLY
+    8 0000000A 4770            BX               LR
+    9 0000000C         
+   10 0000000C                 ALIGN
+   11 0000000C                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\function.d -o.\objects\function.o -I.\RTE\_TM4C123GH6
+PM -I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core
+\Include" -I"C:\Users\Hassan Shafiq\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0
+\Device\Include\TM4C123" --predefine="__EVAL SETA 1" --predefine="__UVISION_VER
+SION SETA 528" --predefine="_RTE_ SETA 1" --predefine="TM4C123GH6PM SETA 1" --l
+ist=.\listings\function.lst function.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 1 in file function.s
+   Uses
+      None
+Comment: .text unused
+Number 00000000
+
+Symbol: Number
+   Definitions
+      At line 5 in file function.s
+   Uses
+      At line 3 in file function.s
+Comment: Number used once
+2 symbols
+337 symbols in table

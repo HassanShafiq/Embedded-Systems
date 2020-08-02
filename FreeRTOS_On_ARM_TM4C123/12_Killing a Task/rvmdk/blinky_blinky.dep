@@ -1,0 +1,11 @@
+Dependencies for Project 'blinky', Target 'blinky': (DO NOT MODIFY !)
+F (.\blinky.c)(0x5EB6874C)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\..\..\.. --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Luminary-D__UVISION_VERSION="528" -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1-o .\rvmdk\blinky.o --omf_browse .\rvmdk\blinky.crf --depend .\rvmdk\blinky.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEC4CD2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5CEC4CCE)
+I (..\..\..\..\inc/hw_memmap.h)(0x5B36A5B2)
+I (..\..\..\..\driverlib/debug.h)(0x5B36A588)
+I (..\..\..\..\driverlib/gpio.h)(0x5B36A588)
+I (..\..\..\..\driverlib/sysctl.h)(0x5B36A588)
+F (.\startup_rvmdk.S)(0x5B36A59C)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Luminary--pd "__UVISION_VERSION SETA 528"-o .\rvmdk\startup_rvmdk.o --depend .\rvmdk\startup_rvmdk.d)
+F (..\..\..\..\driverlib\rvmdk\driverlib.lib)(0x5EB601EF)()
+F (.\readme.txt)(0x5B36A59C)()

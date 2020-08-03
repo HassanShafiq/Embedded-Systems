@@ -1,0 +1,1 @@
+This exercise introduces and uses SysTick timer (Cortex-M Core Peripheral) to create accurate delays, using blocking code by pooling over bit-16 of SysTick Control Register to check if the SysTick Value register hit 0.

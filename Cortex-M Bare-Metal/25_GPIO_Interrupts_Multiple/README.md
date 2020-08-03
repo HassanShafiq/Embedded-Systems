@@ -1,2 +1,2 @@
-GPIO Multiple Interrupts
+## GPIO Multiple Interrupts</br>
 This exercise implements GPIO interrupt, different handlers for different pins in a single GPIO Port, configuring PF4 (SW1), PF0 (SW0) for falling-edge interrupt trigger through GPIO Interrupt Sense (GPIOIS), GPIO Interrupt Event (GPIOIEV), GPIO Interrupt Clear (GPIOICR) registers, setting priority and enabling interrupts in NVIC registers. Interrupt from SW0 toggles PF3 (GREEN LED Pin 3) and from SW1 toggles PF0 (RED LED Pin 1) by testing GPIOF MIS register, in GPIOF_Handler() and implementing different routines based on the condition outcome.

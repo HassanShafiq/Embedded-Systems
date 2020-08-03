@@ -1,4 +1,4 @@
-This coding exercise is to understand internals of Cortex-M (TM4C123GH6PM) internally when our program is running. Values that are placed in registers, the changes that happen in the memory, how to make code run faster and many other internals.</br></br>
+This coding exercise is to understand internals of Cortex-M (TM4C123GH6PM) when our program is running, such as the values that are placed in registers, the changes that happen in the memory, how to make code run faster and many other concepts.</br></br>
 This excercise introduces to the following concepts: 
 - Debug view of Keil uVision
 - memory views

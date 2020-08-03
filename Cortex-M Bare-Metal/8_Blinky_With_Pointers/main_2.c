@@ -1,10 +1,3 @@
-//Blue-Blinky 
-//main.c
-//Author : Israel Gbati (cortex-m.com)
-//Runs on TM4C123 
-
-/*
-
 #include "tm4c123gh6pm.h"
 #include <stdint.h>
 
@@ -29,4 +22,4 @@ int main(){
   while(counter<1000000){
 		 counter++;
 		}
- } */
+ }

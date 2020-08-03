@@ -1,1 +1,1 @@
-This exercise introduces General Purpopose Timers on Tiva C Lanuchpad (TM4C123GH6PM) and uses Timer0 A to create a One-shot timer incrementing a count variable.
+This exercise introduces General Purpopose Timers on Tiva C Lanuchpad (TM4C123GH6PM) and uses a 16-bit Timer0 A configured as One-shot timer with TM4C core running at 16MHz, incrementing a count variable, with value in milli-seconds passed to the function **Timer_1_Oneshot(int milli_seconds)** and polling over bit-1 of TIMER0 RIs(Raw Interrupt Status) Register.

@@ -11,21 +11,22 @@ Performing a range of coding projects, key skills that I learnt:<br/>
 
 These dedicated courses have also provided me a comprehensive understanding of IDE/Compiler Toolchains, ARM design philosophy, programmer's model & firmware development principles in ARM's ecosystem along with internal features of the Cortex-M/A that support embedded OS deployment. This exercise provided me experience in navigating through architecture/technical reference manuals, generic user guides, device data Sheets, and schematics professionally. This helped me learn the algorithmic approaches in resolving a challenge to get an embedded project up & running or alternatively, debug one.<br/>
 
+---------------------------------------------------------------------------------
 
-**~\Cortex-M Bare-Metal<br/>**
+### **~\Cortex-M Bare-Metal<br/>**
 Contains implementations for the course: **Complete ARM Cortex-M Bare-Metal Programming Ground Up™**
 
 This course teaches Cortex-M Internals, Pointers, Structures, Memory Navigation, Debugging, CMSIS,Assembly etc and how to navigate the microntroller reference manual and datasheet to extract the right  information to professionally  build peripheral drivers (ADC, UART, GPIO, TIMER etc.) and firmware. To achieve this goal, no libraries are used in this course, purely ARM Assembly Language and bare-metal embedded C
 
 ---------------------------------------------------------------------------------
-**~\FreeRTOS_On_ARM_TM4C123<br/>**
+### **~\FreeRTOS_On_ARM_TM4C123<br/>**
 Contains implementations for the course: **FreeRTOS From Ground Up™ on ARM Processors**
 
 This course teaches the foundations of real-time systems and how to build real-time applications using FreeRTOS ,one of the most popular real-time operating systems  for embedded systems.  The course gives a detailed overview of the characteristics of the FreeRTOS real-time kernel,  provides a detailed tutorial on the APIs to implement the various features of FreeRTOS  and then goes on to build about 50 real-time projects.
 
 ---------------------------------------------------------------------------------
 
-**~\Ground-up RTOS on ARM_1<br/>**
+### **~\Ground-up RTOS on ARM_1<br/>**
 
 Contains implementations for the course: **Build Your Own RealTime OS (RTOS) From Ground Up™ on ARM 1**
 
@@ -33,7 +34,7 @@ This course teaches how to build a Real-Time Operating Systems through intensive
 
 ---------------------------------------------------------------------------------
 
-**~\Ground-up RTOS on ARM_2 (Advanced Concepts)<br/>**
+### **~\Ground-up RTOS on ARM_2 (Advanced Concepts)<br/>**
 
 Contains implementations for the course: **Build Your Own RealTime OS (RTOS) From Ground Up™ on ARM 2**
 

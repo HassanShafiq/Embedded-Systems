@@ -8,6 +8,6 @@ It initializes the GPIO Port F through
 - GPIO_PORTF_LOCK_R
 - GPIO_PORTF_CR_R
 - RED LED Pin</br>
- registers and toggles it upon pressing the on-board press buttons.
+registers and toggles it upon pressing the on-board press buttons.
 
 Concepts regarding initialization steps (startup_TM4C123.s and startup_TM4C123.c) in Cortex-M's startup routine before entering main() routine are also discussed.

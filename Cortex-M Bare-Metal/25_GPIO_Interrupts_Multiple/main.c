@@ -46,7 +46,7 @@ void GPIOF_Handler(void)
 		/*-----------------------PF4 ISR : START-----------------------*/
 		if(GPIOF->MIS	&	0x10)
 		{
-			//Toggling GREEN LED 3 times, whenever the interrupt occurs:
+			//Toggling RED LED 3 times, whenever the interrupt occurs:
 			for(int i = 0; i < 10 ; i++)
 			{
 				GPIOF->DATA			|=	0x02;

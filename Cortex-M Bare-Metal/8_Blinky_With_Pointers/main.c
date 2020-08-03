@@ -1,4 +1,3 @@
-/*
 #include<stdint.h>
 #include<tm4c123gh6pm.h>
 int main ()
@@ -21,5 +20,3 @@ int main ()
 	ptr = (unsigned int *) 0x400253FCU;
 	*ptr = 0x0EU;
 }
-
-*/

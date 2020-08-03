@@ -1,0 +1,1 @@
+This excercise introduce the CMSIS (Cortex Microcontroller Software Interface Standard) and using CMSIS-Core library to access peripheral registers using a CMSIS Cortex-M4 Peripheral Access Layer Header File for TM4C123GH6PM.

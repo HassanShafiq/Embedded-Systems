@@ -1,2 +1,2 @@
 ## GPTM Interrupt Implementation</br>
-This exercise introduces General Purpopose Timers (GPTM peripheral) on Tiva C Lanuchpad (TM4C123GH6PM) and uses a 16-bit Timer2 A configured as Periodic Interrupt timer with TM4C core running at 16MHz and TIMER2 A timeout interrupt enabled to toggle on-board GREEN LED on every interupt, occuring at a pre-configured rate through value set in Timer2 TAILR register.
+This exercise introduces General Purpose Timers (GPTM peripheral) on Tiva C Lanuchpad (TM4C123GH6PM) and uses a 16-bit Timer2 A configured as Periodic Interrupt timer with TM4C core running at 16MHz and TIMER2 A timeout interrupt enabled to toggle on-board GREEN LED on every interupt, occuring at a pre-configured rate through value set in Timer2 TAILR register.

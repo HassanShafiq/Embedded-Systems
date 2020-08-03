@@ -1,0 +1,1 @@
+This exercise implements using CMSIS-Core to initialize Port F, on-board Green & BLUE LEDs and toggle them upon pressing SW1 and SW2 respectively. Entire implementation uses CMSIS-Core instead of accessing peripheral registers through pre-defined Symbolic Constants using # preprocessor.

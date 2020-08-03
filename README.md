@@ -1,6 +1,18 @@
 # Embedded-System
 This repository contains my coding implementations for Udemy based Embedded Systems and RTOS courses.
-Development Board used: EK-TM4C123GXL based on TM4C123GH6PM MCU (Texas Instruments)
+Development Board used: EK-TM4C123GXL based on TM4C123GH6PM MCU (Texas Instruments).
+
+Performing a range of coding projects, key skills that I learnt:
+
+•	Low-level device drivers development (bare-metal), to interface on-chip peripherals with various external I/O hardware (sensors/actuators)
+•	Compiler intrinsics, assembly code optimization and exploiting NVIC features for low-interrupt latency 
+•	Hardware/software debugging, concept of Finite State Machine (FSM) and embedded software development process
+•	Board Support Package (BSP) and Application development in embedded OS environments (FreeRTOS especially)
+•	Overview of the features of various market leading embedded OS (Micrium  µC/OS-III, CMSIS RTOS RTX, FreeRTOS)
+•	Understanding with the internals of an OS kernel, thread-scheduling schemes and OS porting considerations to other MCUs in ARM product family
+
+These dedicated courses have also provided me a comprehensive understanding of IDE/Compiler Toolchains, ARM design philosophy, programmer's model & firmware development principles in ARM's ecosystem along with internal features of the Cortex-M/A that support embedded OS deployment. This exercise provided me experience in navigating through architecture/technical reference manuals, generic user guides, device data Sheets, and schematics professionally. This helped me learn the algorithmic approaches in resolving a challenge to get an embedded project up & running or alternatively, debug one.
+
 
 ~\Cortex-M Bare-Metal
 

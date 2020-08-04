@@ -6,4 +6,4 @@ The implementation toggles on-board LEDs using a pseudo delay for 3 tasks with d
 - vGreedLedControllerTask(void *pvParamters)
 - vBlueLedControllerTask(void *pvParamters)</br>
 
-where the tasks suspend themselves, while the **configTICK_RATE_HZ** is set at 1000Hz (1 milli second time quanta).
+where the tasks suspend themselves, while the **configTICK_RATE_HZ** is set at 1000Hz (1 milli second time quanta). Using the task handle and vTaskSuspend(), a task can also suspend another task.

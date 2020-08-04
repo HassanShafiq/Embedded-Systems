@@ -1,5 +1,5 @@
-### Task Creation API in FreeRTOS - Changing Task priorities on run-time.</br>
-This coding implementation gives an overview of chaning the task priorities using vTaskPrioritySet() and task handles, available in Task Creation API in FreeRTOS using port for Tiva C Launchpad (TM4C123GH6PM). The implementation also explores the various options available in **FreeRTOSConfig.h** file to configure RTOS scheduler at various modes, task priorities and many other options.</br>
+### Task Control API in FreeRTOS - Changing Task priorities on run-time.</br>
+This coding implementation gives an overview of chaning the task priorities using vTaskPrioritySet() and task handles, available in Task Control API in FreeRTOS using port for Tiva C Launchpad (TM4C123GH6PM). The implementation also explores the various options available in **FreeRTOSConfig.h** file to configure RTOS scheduler at various modes, task priorities and many other options.</br>
 
 The implementation toggles on-board LEDs using a pseudo delay for 3 tasks with different priorities: 
 - vRedLedControllerTask(void *pvParamters)

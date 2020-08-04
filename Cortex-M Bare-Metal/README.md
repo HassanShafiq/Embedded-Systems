@@ -1,2 +1,4 @@
-## GPTM Event-Counter Mode Implementation</br>
-This exercise introduces General Purpopose Timers (GPTM peripheral) on Tiva C Lanuchpad (TM4C123GH6PM) and uses a 16-bit Timer2 A configured as Event-Counter on Rising Edge of every clock cycle by infinitely calling Timer2A_RisingEdgeEvent_Capture() inside a while(1) looop and reading Timer2 TAR register value, with TM4C core running at 16MHz.
+## ~\Cortex-M Bare-Metal</br>
+Contains coding implementations for the course: **Complete ARM Cortex-M Bare-Metal Programming Ground Up™**
+
+This course teaches Cortex-M Internals, Pointers, Structures, Memory Navigation, Debugging, CMSIS,Assembly etc and how to navigate the microntroller reference manual and datasheet to extract the right information to professionally build peripheral drivers (ADC, UART, GPIO, TIMER etc.) and firmware. To achieve this goal, no libraries are used in this course, purely ARM Assembly Language and bare-metal embedded C

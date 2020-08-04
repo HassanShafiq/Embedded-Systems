@@ -1,0 +1,2 @@
+### Converting an existing application into a FreeRTOS Real-time application.</br>
+This coding implementation converts an existing LED blinky application into a FreeRTOS Real-time application, giving an overview of how an RTOS Scheduler works and its various components. The implementation also explores the various options available in FreeRTOSConfig.h file to configure RTOS scheduler at various modes and many other options. 

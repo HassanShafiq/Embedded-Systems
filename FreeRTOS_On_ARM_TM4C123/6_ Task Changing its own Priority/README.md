@@ -6,4 +6,4 @@ The implementation toggles on-board LEDs using a pseudo delay for 3 tasks with d
 - vGreedLedControllerTask(void *pvParamters)
 - vBlueLedControllerTask(void *pvParamters)</br>
 
-changing priorities on run-time, while the **configTICK_RATE_HZ** is set at 1000Hz (1 milli second time quanta).
+changing its own priority on run-time, while the **configTICK_RATE_HZ** is set at 1000Hz (1 milli second time quanta).

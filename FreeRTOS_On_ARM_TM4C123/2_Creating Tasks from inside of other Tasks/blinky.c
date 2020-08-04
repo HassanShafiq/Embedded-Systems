@@ -91,7 +91,7 @@ int main(void)
 		GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_2);
 		GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_1);
 		
-		xTaskCreate(vGreenLedControllerTask,"Green Led Controller",10,NULL,2,NULL);
+		xTaskCreate(vBlueLedControllerTask,"Green Led Controller",10,NULL,2,NULL);
 		
 		vTaskStartScheduler();
 

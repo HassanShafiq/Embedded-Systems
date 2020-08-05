@@ -1,4 +1,4 @@
-### FreeRTOS Cooperative Idle Task.</br>
+### FreeRTOS Cooperative Idle Task and onfigIDLE_SHOULD_YIELD (FreeRTOSConfig.h) .</br>
 This coding implementation demonstrates the of FreeRTOS Cooperative Idle Task Function using vApplicationIdleHook(void) and how its yield configuration with configIDLE_SHOULD_YIELD (in FreeRTOSConfig.h file) effects the time sharing between application tasks and the idle task. The tick interrupt can optionally call an application defined hook (or callback) function – the tick hook. The tick hook provides a convenient place to implement timer functionality.</br>
 
 The implementation toggles on-board GREEN LED using vTaskDelay() for the task:

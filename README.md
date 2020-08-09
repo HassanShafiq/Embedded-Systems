@@ -9,7 +9,7 @@ Performing a range of coding projects, key skills that I learnt:<br/>
 -	Overview of the features of various market leading embedded OS (Micrium  µC/OS-III, CMSIS RTOS RTX, FreeRTOS)<br/>
 -	Understanding with the internals of an OS kernel, thread-scheduling schemes and OS porting considerations to other MCUs in ARM product family<br/>
 
-These dedicated courses have also provided me a comprehensive understanding of IDE/Compiler Toolchains, ARM design philosophy, programmer's model & firmware development principles in ARM's ecosystem along with internal features of the Cortex-M/A that support embedded OS deployment. This exercise provided me experience in navigating through architecture/technical reference manuals, generic user guides, device data Sheets, and schematics professionally. This helped me learn the algorithmic approaches in resolving a challenge to get an embedded project up & running or alternatively, debug one.<br/>
+These dedicated courses have provided me a comprehensive understanding of IDE/Compiler Toolchains, ARM design philosophy, programmer's model & firmware development principles in ARM's ecosystem along with internal features of the Cortex-M/A that support embedded OS deployment. The coding exercises provided me experience in navigating through architecture/technical reference manuals, generic user guides, device data Sheets, and schematics professionally. Together, it helped me to learn the algorithmic approaches in resolving a challenge to get an embedded project up & running or alternatively, debug one.<br/>
 
 ---------------------------------------------------------------------------------
  

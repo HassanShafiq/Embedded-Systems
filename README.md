@@ -42,4 +42,12 @@ This course teaches how to build a Real-Time Operating Systems through intensive
 ---------------------------------------------------------------------------------
 
 **Important Note:**<br/>
-At the time of initializing this README.md file, the author of these above mentioned courese; Israel Gbati (https://www.udemy.com/user/israel-gbati-2/) is going through some re-orientation on Udemy to launch his own separate eLearning platform for Embedded Systems (at www.cortex-m.com). Therefore, direct access to the details of these course is temporarily unavailble publicly. However, those who had purchased them already (as I do), have lifetime full access. In case, interested to see section-wise details of the courses, please ask me and I'll share access.
+At the time of initializing this README.md file, the author of these above mentioned courese; Israel Gbati (https://www.udemy.com/user/israel-gbati-2/) is going through some re-orientation on Udemy to launch his own separate eLearning platform for Embedded Systems (at www.cortex-m.com). Therefore, direct access to the details of these course might be temporarily unavailble. However, those who had purchased them already (as I do), have lifetime full access. In case, interested to see section-wise details of the courses, please ask me and I'll share access.
+
+---------------------------------------------------------------------------------
+### Documentation & Reference Resources used:
+
+| Source | Description |
+| --- | --- |
+**System-on-Chip Design with Arm® Cortex®-M Processors: Reference Book**</br>By: Joseph Yiu, Distinguished Arm Engineer</br>ISBN – 978-1-911531-18-0 | [<img src="https://www.arm.com/-/media/global/resources/education/textbooks/soc-reference-book/System-on-Chip%20Design%20with%20Arm%20Cortex-M%20Processors%20-%20front%20cover%20web.jpg?revision=e99db918-b5b2-4426-bcda-d056de78ee46&h=780&w=600&la=en&hash=BF2D17937E13DAC139628F480B3F07D9D00C047D" width="250"/>](https://www.arm.com/resources/education/books/soc-reference-book)
+**ARM® Cortex® M4 Cookbook**</br>Mark Fisher | [<img src="https://www.packtpub.com/media/catalog/product/cache/c2dd93b9130e9fabaf187d1326a880fc/6/5/6503ot_0001_arm20cortex20m420cookbook.jpg" width="250"/>](https://www.packtpub.com/hardware-and-creative/arm-cortex-m4-cookbook)

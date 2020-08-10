@@ -45,7 +45,16 @@ At the time of initializing this README.md file, the author of these above menti
 
 ---------------------------------------------------------------------------------
 ### Documentation & Reference Resources used:
+The technical documentation used for the above projects include:
+| Source | Description |
+| --- | --- |
+**Tiva™ C Series TM4C123G LaunchPad Evaluation Board**</br>User's Guide | [<img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Pdf_File_Type_Adobe_logo_logos-512.png" width="50"/>](https://www.ti.com/lit/ug/spmu296/spmu296.pdf?ts=1597064758529&ref_url=https%253A%252F%252Fwww.ti.com%252Ftool%252FEK-TM4C123GXL)
+**Tiva™ C Series TM4C123GH6PM Microcontroller**</br>Data Sheet (Rev. E) | [<img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Pdf_File_Type_Adobe_logo_logos-512.png" width="50"/>](https://www.ti.com/lit/ds/spms376e/spms376e.pdf?ts=1597065270344&ref_url=https%253A%252F%252Fwww.ti.com%252Ftool%252FEK-TM4C123GXL)
+**Arm® Cortex®-M4 Processor**</br>Technical Reference Manual</br>Revision: r0p1 | [<img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Pdf_File_Type_Adobe_logo_logos-512.png" width="50"/>](https://static.docs.arm.com/100166/0001/arm_cortexm4_processor_trm_100166_0001_00_en.pdf)
+**Arm® Cortex®-M4 Processor**</br>Generic User Guide | [<img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Pdf_File_Type_Adobe_logo_logos-512.png" width="50"/>](https://static.docs.arm.com/dui0553/a/DUI0553A_cortex_m4_dgug.pdf)
+**Arm® ARMv7-M Architecture Reference Manual**</br>Architecture Reference Manual | [<img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Pdf_File_Type_Adobe_logo_logos-512.png" width="50"/>](https://documentation-service.arm.com/static/5f10695d0daa596235e7f8e6?token=)
 
+I peronally maintain a comprehensive collection of embedded systems books, that I consult frequently. Some of the reference books used for the above projects include:
 | Source | Description |
 | --- | --- |
 **System-on-Chip Design with Arm® Cortex®-M Processors: Reference Book**</br>Author: Joseph Yiu, Distinguished Arm Engineer</br>ISBN – 978-1-911531-18-0 | [<img src="https://www.arm.com/-/media/global/resources/education/textbooks/soc-reference-book/System-on-Chip%20Design%20with%20Arm%20Cortex-M%20Processors%20-%20front%20cover%20web.jpg?revision=e99db918-b5b2-4426-bcda-d056de78ee46&h=780&w=600&la=en&hash=BF2D17937E13DAC139628F480B3F07D9D00C047D" width="200"/>](https://www.arm.com/resources/education/books/soc-reference-book)

@@ -1,4 +1,4 @@
-## Embedded-Systems - My Portolio
+## Embedded-Systems - My Portfolio
 This repository contains my coding implementations for Udemy based Embedded Systems and RTOS courses, that I have taken and trained on.<br/>**Development Board used:** [EK-TM4C123GXL based on TM4C123GH6PM MCU (Texas Instruments)](https://www.ti.com/store/ti/en/p/product/?p=EK-TM4C123GXL).<br/>**IDE/Debugger:** [µVision](http://www2.keil.com/mdk5/uvision/)/[Stellaris ICDI](https://www.ti.com/tool/STELLARIS_ICDI_DRIVERS) (on-baord Tiva C).<br/>**Compiler Toolchain:** [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm).
 
 Performing a range of coding projects, key skills that I learnt:<br/>
